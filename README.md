@@ -38,5 +38,3 @@ pip install -r requirements.txt
 
 3. pytest -q --alluredir=allure-results
 
-```bash
-pip install -r requirements.txt
