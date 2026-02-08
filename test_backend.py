@@ -5,10 +5,10 @@ from BackendAutomation.resources.config import BASE_URL, GET_BOOK_ENDPOINT, DELE
 from BackendAutomation.resources.payloads import delete_book_payload
 
 
-@allure.title("Add a new book via API")
-@allure.description("Validates that a book can be added successfully")
+@allure.title("Return book")
+@allure.description("Return data of a book via API")
 def test_get_book(book_id):
-    with allure.step("Send POST request to add a book"):
+    with allure.step("Send get request to get a book"):
         response = requests.get(
             url=f"{BASE_URL}{GET_BOOK_ENDPOINT}",
             params={'ID': book_id}
